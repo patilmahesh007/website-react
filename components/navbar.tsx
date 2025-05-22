@@ -5,12 +5,12 @@ import Image from "next/image"
 import Link from "next/link"
 import { ChevronDown, Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
-
+import logo from "./../public/Logo .png"
 const servicesDropdown = [
-  { name: "Data Engineering", href: "/services/data-engineering" },
-  { name: "AI & Gen AI", href: "/services/ai" },
   { name: "Product Engineering", href: "/services/product-engineering" },
   { name: "Full-Stack & API Development", href: "/services/product-engineering/full-stack-api-development" },
+    { name: "AI & Gen AI", href: "/services/ai" },
+
 ]
 
 const industriesDropdown = [
@@ -27,9 +27,9 @@ export default function Navbar() {
 
   return (
     <header className="border-b border-gray-800 sticky top-0 z-50 bg-[#0a0a0a]/90 backdrop-blur-sm">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+<div className="mx-auto px-4 py-4 flex items-center justify-between w-full lg:w-[85vw]">
         <Link href="/" className="flex items-center">
-          <Image src="/logo.svg" alt="Apptware Logo" width={150} height={40} className="h-8 w-auto" />
+<Image src={logo} alt="Apptware Logo" width={170} height={60} className="h-8 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -114,9 +114,6 @@ export default function Navbar() {
             Careers
           </Link>
 
-          <Link href="/blogs" className="text-white hover:text-gray-300">
-            Blogs
-          </Link>
         </nav>
 
         <div className="flex items-center space-x-4">

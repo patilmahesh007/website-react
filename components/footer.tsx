@@ -5,11 +5,11 @@ import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "luc
 export default function Footer() {
   return (
     <footer className="bg-[#080808] border-t border-gray-800">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-12 w-[85vw]">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link href="/" className="inline-block mb-6">
-              <Image src="/logo.svg" alt="Apptware Logo" width={150} height={40} className="h-8 w-auto" />
+              <Image src="/FooterLogo.png" alt="Apptware Logo" width={150} height={40} className="h-8 w-auto" />
             </Link>
             <p className="text-gray-400 mb-6">
               We blend AI innovation with human-centric design to craft intelligent, seamless, and future-ready digital
@@ -38,11 +38,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li>
-                <Link href="/services/data-engineering" className="text-gray-400 hover:text-white">
-                  Data Engineering
-                </Link>
-              </li>
+              {/* Removed Data Engineering */}
               <li>
                 <Link href="/services/ai" className="text-gray-400 hover:text-white">
                   AI & Gen AI
@@ -82,16 +78,7 @@ export default function Footer() {
                   Careers
                 </Link>
               </li>
-              <li>
-                <Link href="/blogs" className="text-gray-400 hover:text-white">
-                  Blogs
-                </Link>
-              </li>
-              <li>
-                <Link href="/case-studies" className="text-gray-400 hover:text-white">
-                  Case Studies
-                </Link>
-              </li>
+              {/* Removed Blogs and Case Studies */}
               <li>
                 <Link href="/contact" className="text-gray-400 hover:text-white">
                   Contact
@@ -102,24 +89,32 @@ export default function Footer() {
 
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start space-x-3">
-                <Mail className="h-5 w-5 text-purple-500 mt-0.5" />
-                <span className="text-gray-400">info@apptware.com</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <Phone className="h-5 w-5 text-purple-500 mt-0.5" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-purple-500 mt-0.5" />
-                <span className="text-gray-400">
-                  123 Tech Plaza, Suite 400
-                  <br />
-                  San Francisco, CA 94105
-                </span>
-              </li>
-            </ul>
+           <ul className="space-y-4">
+  <li className="flex items-start space-x-3">
+    <Mail className="h-5 w-5 text-purple-500 mt-0.5" />
+    <a href="mailto:shrishtiwebsolutios@gmail.com" className="text-gray-400 hover:text-white">
+      shrishtiwebsolutios@gmail.com
+    </a>
+  </li>
+  <li className="flex items-start space-x-3">
+    <Phone className="h-5 w-5 text-purple-500 mt-0.5" />
+    <a href="tel:8468954007" className="text-gray-400 hover:text-white">
+      8468954007
+    </a>
+  </li>
+  <li className="flex items-start space-x-3">
+    <MapPin className="h-5 w-5 text-purple-500 mt-0.5" />
+    <Link
+      href="https://www.google.com/maps/place/Shrishti+web+solutions/@19.5231448,74.4749746,751m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bdcf19e3fb5ed0b:0x2789bd505eb292c6!8m2!3d19.5231448!4d74.4775495!16s%2Fg%2F11xf_7fybk?entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoASAFQAw%3D%3D"
+      className="text-gray-400 hover:text-white"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Satral songaon Tal-Rahuri 
+    </Link>
+  </li>
+</ul>
+
           </div>
         </div>
 

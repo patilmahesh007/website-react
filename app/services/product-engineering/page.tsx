@@ -6,21 +6,21 @@ import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 
-export default function ProductEngineering() {
+export default function DigitalTransformation() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white">
       {/* Hero Section */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-purple-900/20 to-black">
-        <div className="container mx-auto px-4">
+        <div className="w-[85vw] mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Product Engineering</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Digital Transformation</h1>
             <p className="text-gray-400 text-lg mb-8">
-              Build innovative, scalable, and market-ready products with our end-to-end product engineering services.
+              Transform your business operations with modern technologies to drive innovation and efficiency.
             </p>
             <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-6 rounded-md transition duration-300">
               Learn More
@@ -31,7 +31,7 @@ export default function ProductEngineering() {
 
       {/* Services Overview */}
       <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
+        <div className="w-[85vw] mx-auto px-4">
           <motion.div
             className="mb-16"
             initial={{ opacity: 0, y: 20 }}
@@ -40,40 +40,40 @@ export default function ProductEngineering() {
             transition={{ duration: 0.6 }}
           >
             <p className="text-gray-400 uppercase tracking-wider mb-2">OUR SERVICES</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Comprehensive Product Engineering Solutions</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Empowering Your Digital Journey</h2>
             <p className="text-gray-400 text-lg max-w-3xl">
-              From concept to deployment, we provide end-to-end product engineering services to help you build
-              innovative and market-ready products.
+              We offer a range of services designed to help your business embrace digital transformation and thrive in the modern era.
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                title: "Full-Stack & API Development",
+                title: "Cloud Migration",
                 description:
-                  "Build robust, scalable, and high-performance applications with our comprehensive full-stack and API development services.",
-                link: "/services/product-engineering/full-stack-api-development",
+                  "Seamlessly migrate your applications and infrastructure to the cloud for improved scalability and cost-efficiency.",
+                link: "/services/digital-transformation/cloud-migration",
                 image: "/placeholder.svg?height=300&width=500",
               },
               {
-                title: "Mobile App Development",
+                title: "Legacy Modernization",
                 description:
-                  "Create engaging, user-friendly mobile applications for iOS and Android platforms that deliver exceptional user experiences.",
-                link: "/services/product-engineering/mobile-app-development",
+                  "Upgrade your outdated systems to modern architectures without disrupting core operations.",
+                link: "/services/digital-transformation/legacy-modernization",
                 image: "/placeholder.svg?height=300&width=500",
               },
               {
-                title: "UI/UX Design",
+                title: "AI & Automation",
                 description:
-                  "Design intuitive, visually appealing interfaces that enhance user engagement and satisfaction.",
-                link: "/services/product-engineering/ui-ux-design",
+                  "Integrate AI and automation into your processes to enhance productivity and decision-making.",
+                link: "/services/digital-transformation/ai-automation",
                 image: "/placeholder.svg?height=300&width=500",
               },
               {
-                title: "DevOps & Cloud Services",
-                description: "Streamline your development and deployment processes with our DevOps and cloud services.",
-                link: "/services/product-engineering/devops-cloud",
+                title: "Data Analytics",
+                description:
+                  "Unlock valuable insights from your data with powerful analytics and visualization solutions.",
+                link: "/services/digital-transformation/data-analytics",
                 image: "/placeholder.svg?height=300&width=500",
               },
             ].map((service, index) => (
@@ -86,7 +86,7 @@ export default function ProductEngineering() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <div className="relative h-48">
-                  <Image src={service.image || "/placeholder.svg"} alt={service.title} fill className="object-cover" />
+                  <Image src={service.image} alt={service.title} fill className="object-cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-3">{service.title}</h3>
@@ -106,7 +106,7 @@ export default function ProductEngineering() {
 
       {/* Why Choose Us */}
       <section className="py-20 md:py-32 bg-[#080808]">
-        <div className="container mx-auto px-4">
+        <div className="w-[85vw] mx-auto px-4">
           <motion.div
             className="mb-16 text-center"
             initial={{ opacity: 0, y: 20 }}
@@ -115,44 +115,43 @@ export default function ProductEngineering() {
             transition={{ duration: 0.6 }}
           >
             <p className="text-gray-400 uppercase tracking-wider mb-2">WHY CHOOSE US</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Approach to Product Engineering</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Transforming Ideas into Digital Success</h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              We combine technical expertise, design thinking, and business acumen to deliver products that drive growth
-              and innovation.
+              Our experts help you embrace cutting-edge technologies that align with your business vision.
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "User-Centric Design",
+                title: "Business-Focused Strategy",
                 description:
-                  "We place users at the center of our design process to create products that are intuitive, engaging, and meet real user needs.",
+                  "We tailor solutions to your business goals, ensuring every transformation effort delivers measurable value.",
               },
               {
-                title: "Agile Development",
+                title: "Technology Agility",
                 description:
-                  "Our agile approach ensures flexibility, transparency, and continuous improvement throughout the development process.",
+                  "Stay ahead with modern technologies and agile implementation strategies.",
               },
               {
-                title: "Technical Excellence",
+                title: "Proven Expertise",
                 description:
-                  "We maintain high standards of code quality, performance, and security to deliver robust and reliable products.",
+                  "Our cross-functional teams bring experience across industries and technologies.",
               },
               {
-                title: "Scalable Architecture",
+                title: "Custom Solutions",
                 description:
-                  "Our solutions are designed to scale with your business, accommodating growth and evolving requirements.",
+                  "No one-size-fits-all here—we design digital strategies that work for you.",
               },
               {
-                title: "Continuous Innovation",
+                title: "Secure & Compliant",
                 description:
-                  "We stay at the forefront of technology trends to bring innovative solutions to your product challenges.",
+                  "We ensure data privacy, security, and compliance with industry regulations.",
               },
               {
-                title: "End-to-End Support",
+                title: "Ongoing Optimization",
                 description:
-                  "From concept to deployment and beyond, we provide comprehensive support throughout your product's lifecycle.",
+                  "We continuously monitor and improve systems for performance and ROI.",
               },
             ].map((item, index) => (
               <motion.div
@@ -173,19 +172,19 @@ export default function ProductEngineering() {
 
       {/* CTA Section */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-purple-900/20 to-black">
-        <div className="container mx-auto px-4 text-center">
+        <div className="w-[85vw] mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Build Your Next Product?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Start Your Digital Transformation Today</h2>
             <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
-              Let's collaborate to create innovative, market-ready products that drive your business forward.
+              Let's collaborate to unlock the full potential of your business through digital innovation.
             </p>
             <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-6 rounded-md transition duration-300">
-              Get in Touch
+              Contact Us
             </Button>
           </motion.div>
         </div>

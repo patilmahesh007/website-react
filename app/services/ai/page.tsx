@@ -30,7 +30,7 @@ export default function AiServices() {
 
       {/* Services Overview */}
       <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
+        <div className="mx-auto px-4" style={{ width: "85vw" }}>
           <motion.div
             className="mb-16"
             initial={{ opacity: 0, y: 20 }}
@@ -104,7 +104,7 @@ export default function AiServices() {
 
       {/* AI Innovation Showcase */}
       <section className="py-20 md:py-32 bg-[#080808]">
-        <div className="container mx-auto px-4">
+        <div className="mx-auto px-4" style={{ width: "85vw" }}>
           <motion.div
             className="mb-16"
             initial={{ opacity: 0, y: 20 }}

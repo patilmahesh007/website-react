@@ -18,8 +18,7 @@ export default function About() {
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">About Apptware</h1>
             <p className="text-gray-400 text-lg mb-8">
-              We're a team of innovators, designers, and engineers passionate about creating intelligent digital
-              experiences.
+              We're a team of innovators, designers, and engineers passionate about creating intelligent digital experiences.
             </p>
           </motion.div>
         </div>
@@ -27,7 +26,7 @@ export default function About() {
 
       {/* Our Story */}
       <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
+        <div className="mx-auto px-4" style={{ maxWidth: "85vw" }}>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -38,17 +37,13 @@ export default function About() {
               <p className="text-purple-500 uppercase tracking-wider mb-2">OUR STORY</p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Pioneering the Future of Digital Experiences</h2>
               <p className="text-gray-400 text-lg mb-6">
-                Founded in 2015, Apptware began with a simple mission: to blend AI innovation with human-centric design
-                to create intelligent, seamless digital experiences.
+                Founded in 2015, Apptware began with a simple mission: to blend AI innovation with human-centric design to create intelligent, seamless digital experiences.
               </p>
               <p className="text-gray-400 text-lg mb-6">
-                Over the years, we've grown from a small team of passionate technologists to a global company serving
-                clients across industries. Throughout our journey, we've remained committed to our core values of
-                innovation, excellence, and client success.
+                Over the years, we've grown from a small team of passionate technologists to a global company serving clients across industries. Throughout our journey, we've remained committed to our core values of innovation, excellence, and client success.
               </p>
               <p className="text-gray-400 text-lg">
-                Today, we're at the forefront of the AI revolution, helping organizations leverage cutting-edge
-                technologies to solve complex problems and create new opportunities.
+                Today, we're at the forefront of the AI revolution, helping organizations leverage cutting-edge technologies to solve complex problems and create new opportunities.
               </p>
             </motion.div>
             <motion.div
@@ -66,7 +61,7 @@ export default function About() {
 
       {/* Our Values */}
       <section className="py-20 md:py-32 bg-[#080808]">
-        <div className="container mx-auto px-4">
+        <div className="mx-auto px-4" style={{ maxWidth: "85vw" }}>
           <motion.div
             className="mb-16 text-center"
             initial={{ opacity: 0, y: 20 }}
@@ -131,7 +126,7 @@ export default function About() {
 
       {/* Leadership Team */}
       <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4">
+        <div className="mx-auto px-4" style={{ maxWidth: "85vw" }}>
           <motion.div
             className="mb-16 text-center"
             initial={{ opacity: 0, y: 20 }}
@@ -168,8 +163,7 @@ export default function About() {
                   <h3 className="text-xl font-bold mb-1">John Doe</h3>
                   <p className="text-purple-500 mb-4">Chief Executive Officer</p>
                   <p className="text-gray-400">
-                    With over 15 years of experience in technology and business leadership, John leads our company's
-                    vision and strategy.
+                    With over 15 years of experience in technology and business leadership, John leads our company's vision and strategy.
                   </p>
                 </div>
               </motion.div>
@@ -186,9 +180,10 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="max-w-3xl mx-auto"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Team</h2>
-            <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-gray-400 text-lg mb-8">
               We're always looking for talented individuals who share our passion for innovation and excellence.
             </p>
             <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-6 rounded-md transition duration-300">
